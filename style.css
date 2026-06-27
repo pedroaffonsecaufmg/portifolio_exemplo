@@ -49,6 +49,51 @@ footer {
 #hero h1{
   text-align: center;
 }
-#contato a{
-  color: rgb(255, 255, 255);
+#contato a,
+#contato a:visited {
+  color: rgb(186, 179, 179);
 }
+#hero a,
+#hero a:visited{
+color: rgb(186, 179, 179);
+}
+h3 {
+  margin-top: 2rem;
+}
+
+.foto-hobby {
+  margin-top: 2rem;
+}
+.foto-principal {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 70%;
+}
+.foto-perfil {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 70%;
+  margin-top: 1rem;
+  position: relative;
+  left: 600px;
+}
+
+.foto-snow {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  align-items: center;
+}
+.foto-kite {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+.foto-hobby {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
