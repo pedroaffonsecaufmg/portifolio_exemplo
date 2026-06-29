@@ -3,6 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+nav a {
+  transition: color 0.2s ease;
+}
+nav a:hover {
+  color: var(--accent);
+}
+
+#contato a:hover,
+.hero-texto a:hover {
+  color: var(--accent);
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+nav a.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+.foto-snow:hover,
+.foto-kite:hover,
+.foto-perfil:hover,
+.foto-principal:hover {
+  transform: scale(1.05);
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Poppins', Arial, sans-serif;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +44,19 @@ body {
 }
 main{
   flex: 1;
+}
+h2 {
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--accent);
+  margin-top: 0.5rem;
+  border-radius: 2px;
 }
 header nav {
   display: flex;
@@ -80,17 +122,13 @@ h3 {
   left: 600px;
 }
 
-.foto-snow {
+.foto-snow, .foto-kite {
   width: 280px;
   height: 280px;
   object-fit: cover;
-  align-items: center;
+  border-radius: 12px;
 }
-.foto-kite {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-}
+
 .foto-hobby {
   display: flex;
   justify-content: center;
