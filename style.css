@@ -3,35 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav a {
-  transition: color 0.2s ease;
-}
-nav a:hover {
-  color: var(--accent);
-}
-
-#contato a:hover,
-.hero-texto a:hover {
-  color: var(--accent);
-}
-
-img {
-  transition: transform 0.3s ease;
-}
-nav a.active {
-  color: var(--accent);
-  font-weight: 700;
-}
-.foto-snow:hover,
-.foto-kite:hover,
-.foto-perfil:hover,
-.foto-principal:hover {
-  transform: scale(1.05);
-}
-
-h1, h2, h3, .logo {
-  font-family: 'Poppins', Arial, sans-serif;
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -42,9 +13,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-main{
+
+main {
   flex: 1;
 }
+
+img {
+  transition: transform 0.3s ease;
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
 h2 {
   display: inline-block;
 }
@@ -54,10 +35,23 @@ h2::after {
   display: block;
   width: 50px;
   height: 4px;
-  background-color: var(--accent);
+  background-color: #2dd4bf;
   margin-top: 0.5rem;
   border-radius: 2px;
 }
+
+h3 {
+  margin-top: 2rem;
+}
+
+/* Header e navegação */
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(28, 28, 29);
+  z-index: 10;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -75,63 +69,114 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #ffffff;
+  transition: color 0.2s ease;
 }
+
+nav a:hover,
+nav a.active {
+  color: #2dd4bf;
+}
+
+nav a.active {
+  font-weight: 700;
+}
+
+/* Seções */
 section {
   padding: 4rem 2rem;
   max-width: 900px;
   margin: 0 auto;
+  scroll-margin-top: 80px;
 }
 
-footer {
-  text-align: center;
-  ;
-  padding: 1rem;
-  background-color:  rgb(28, 28, 29);
-}
-#hero h1{
+/* Hero */
+#hero h1 {
   text-align: center;
 }
-#contato a,
-#contato a:visited {
+
+#hero a,
+#hero a:visited {
   color: rgb(186, 179, 179);
 }
-#hero a,
-#hero a:visited{
-color: rgb(186, 179, 179);
-}
-h3 {
-  margin-top: 2rem;
+
+#hero a:hover {
+  color: #2dd4bf;
 }
 
-.foto-hobby {
-  margin-top: 2rem;
-}
-.foto-principal {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 70%;
-}
+.foto-principal,
 .foto-perfil {
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 70%;
-  margin-top: 1rem;
-  position: relative;
-  left: 600px;
 }
 
-.foto-snow, .foto-kite {
+.foto-perfil {
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+/* Sobre / Hobbies */
+.foto-hobby {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 2rem;
+}
+
+.foto-snow,
+.foto-kite {
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.foto-hobby {
-  display: flex;
-  justify-content: center;
-  gap: 8rem;
+.foto-snow:hover,
+.foto-kite:hover,
+.foto-perfil:hover,
+.foto-principal:hover {
+  transform: scale(1.05);
 }
 
+/* Projetos */
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projeto {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: rgb(186, 179, 179);
+}
+
+#projetos a:hover {
+  color: #2dd4bf;
+}
+
+/* Contato */
+#contato a,
+#contato a:visited {
+  color: rgb(186, 179, 179);
+}
+
+#contato a:hover {
+  color: #2dd4bf;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(28, 28, 29);
+}
