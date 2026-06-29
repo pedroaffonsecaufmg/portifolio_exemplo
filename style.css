@@ -44,7 +44,6 @@ h3 {
   margin-top: 2rem;
 }
 
-/* Header e navegação */
 header {
   position: sticky;
   top: 0;
@@ -81,7 +80,6 @@ nav a.active {
   font-weight: 700;
 }
 
-/* Seções */
 section {
   padding: 4rem 2rem;
   max-width: 900px;
@@ -89,7 +87,6 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* Hero */
 #hero h1 {
   text-align: center;
 }
@@ -105,10 +102,10 @@ section {
 
 .foto-principal,
 .foto-perfil {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 70%;
+  border-radius: 40%;
 }
 
 .foto-perfil {
@@ -117,7 +114,6 @@ section {
   margin-top: 1rem;
 }
 
-/* Sobre / Hobbies */
 .foto-hobby {
   display: flex;
   justify-content: center;
@@ -140,7 +136,6 @@ section {
   transform: scale(1.05);
 }
 
-/* Projetos */
 .grid-projetos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -150,13 +145,12 @@ section {
 
 .projeto {
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 1.5rem;
 }
 
 .projeto a {
   display: inline-block;
-  margin-top: 0.5rem;
   color: rgb(186, 179, 179);
 }
 
@@ -164,17 +158,15 @@ section {
   color: #2dd4bf;
 }
 
-/* Contato */
 #contato a,
 #contato a:visited {
   color: rgb(186, 179, 179);
 }
 
 #contato a:hover {
-  color: #2dd4bf;
+  color: #35d4bf;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
